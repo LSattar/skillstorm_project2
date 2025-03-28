@@ -11,7 +11,7 @@ pipeline {
             }
             steps {
                 withCredentials([usernamePassword
-                (credentialsId: 'aws', passwordVariable: 'AWS_SECRET_ACCESS_Key',
+                (credentialsId: 'GithubProject2', passwordVariable: 'AWS_SECRET_ACCESS_Key',
                  usernameVariable: 'AWS_ACCESS_KEY_ID')]) {
                     sh '''
                     echo "Listing AWS CLI"
